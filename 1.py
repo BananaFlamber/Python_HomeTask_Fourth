@@ -2,7 +2,7 @@ print("\033c")
 
 import math 
 
-def fid_multiplier(numb): 
+def find_multiplier(numb): 
     while numb % 2 == 0: 
         print(2) 
         numb = numb / 2 
@@ -15,4 +15,4 @@ def fid_multiplier(numb):
  
 numb = int(input("Введите натуралное число для его разложения на множители: ")) 
 
-fid_multiplier(numb) 
+find_multiplier(numb) 
