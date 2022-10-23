@@ -7,16 +7,16 @@ def write_file(st):
 
 
 def rnd():
-    return random.randint(0,101)
+    return random.randint(0, 101)
 
 
 def create_mn(k):
     lst = [rnd() for i in range(k+1)]
     return lst
-    
+
 
 def create_str(sp):
-    lst= sp[::-1]
+    lst = sp[::-1]
     wr = ''
     if len(lst) < 1:
         wr = 'x = 0'
@@ -36,6 +36,7 @@ def create_str(sp):
                 wr += ' = 0'
     return wr
 
+
 k = int(input("Введите натуральную степень k = "))
-koef = create_mn(k)
-write_file(create_str(koef))
+keff = create_mn(k)
+write_file(create_str(keff))
